@@ -3,7 +3,7 @@ package com.rat4er.weatherapp.toast;
 import android.content.Context;
 
 import com.aniketjain.roastedtoast.Toasty;
-import com.rat4er.weatherapp.weatherapp.R;
+import com.rat4er.weatherapp.R;
 
 public class Toaster {
     public static void successToast(Context context, String msg) {

@@ -2,7 +2,7 @@ package com.rat4er.weatherapp.update;
 
 import android.content.Context;
 
-import com.rat4er.weatherapp.weatherapp.R;
+import com.rat4er.weatherapp.R;
 
 public class UpdateUI {
 

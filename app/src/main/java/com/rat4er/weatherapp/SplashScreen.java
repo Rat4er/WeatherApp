@@ -8,7 +8,7 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.rat4er.weatherapp.weatherapp.databinding.ActivitySplashScreenBinding;
+import com.rat4er.weatherapp.databinding.ActivitySplashScreenBinding;
 
 @SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
