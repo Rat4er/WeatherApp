@@ -1,6 +1,6 @@
-package com.aniketjain.weatherapp.url;
+package com.rat4er.weatherapp.url;
 
-import com.aniketjain.weatherapp.location.LocationCord;
+import com.rat4er.weatherapp.location.LocationCord;
 
 public class URL {
     private String link;

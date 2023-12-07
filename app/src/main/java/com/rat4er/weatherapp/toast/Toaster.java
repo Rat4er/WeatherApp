@@ -1,9 +1,9 @@
-package com.aniketjain.weatherapp.toast;
+package com.rat4er.weatherapp.toast;
 
 import android.content.Context;
 
 import com.aniketjain.roastedtoast.Toasty;
-import com.aniketjain.weatherapp.R;
+import com.rat4er.weatherapp.weatherapp.R;
 
 public class Toaster {
     public static void successToast(Context context, String msg) {

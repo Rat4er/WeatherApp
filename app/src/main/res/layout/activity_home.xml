@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBGColor"
-    tools:context=".HomeActivity">
+    tools:context="com.rat4er.weatherapp.weatherapp.com.rat4er.weatherapp.HomeActivity">
 
     <include
         android:id="@+id/layout"

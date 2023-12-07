@@ -1,8 +1,8 @@
-package com.aniketjain.weatherapp.update;
+package com.rat4er.weatherapp.update;
 
 import android.content.Context;
 
-import com.aniketjain.weatherapp.R;
+import com.rat4er.weatherapp.weatherapp.R;
 
 public class UpdateUI {
 

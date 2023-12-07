@@ -1,4 +1,4 @@
-package com.aniketjain.weatherapp.network;
+package com.rat4er.weatherapp.network;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

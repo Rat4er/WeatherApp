@@ -1,8 +1,8 @@
-package com.aniketjain.weatherapp;
+package com.rat4er.weatherapp;
 
-import static com.aniketjain.weatherapp.location.CityFinder.getCityNameUsingNetwork;
-import static com.aniketjain.weatherapp.location.CityFinder.setLongitudeLatitude;
-import static com.aniketjain.weatherapp.network.InternetConnectivity.isInternetConnected;
+import static com.rat4er.weatherapp.location.CityFinder.getCityNameUsingNetwork;
+import static com.rat4er.weatherapp.location.CityFinder.setLongitudeLatitude;
+import static com.rat4er.weatherapp.network.InternetConnectivity.isInternetConnected;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -28,12 +28,13 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.aniketjain.weatherapp.adapter.DaysAdapter;
-import com.aniketjain.weatherapp.databinding.ActivityHomeBinding;
-import com.aniketjain.weatherapp.location.LocationCord;
-import com.aniketjain.weatherapp.toast.Toaster;
-import com.aniketjain.weatherapp.update.UpdateUI;
-import com.aniketjain.weatherapp.url.URL;
+import com.rat4er.weatherapp.weatherapp.R;
+import com.rat4er.weatherapp.adapter.DaysAdapter;
+import com.rat4er.weatherapp.weatherapp.databinding.ActivityHomeBinding;
+import com.rat4er.weatherapp.location.LocationCord;
+import com.rat4er.weatherapp.toast.Toaster;
+import com.rat4er.weatherapp.update.UpdateUI;
+import com.rat4er.weatherapp.url.URL;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.play.core.appupdate.AppUpdateInfo;
