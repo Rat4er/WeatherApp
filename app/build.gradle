@@ -6,7 +6,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.rat4er.weatherapp.trans"
+        applicationId "com.rat4er.weatherapp"
         minSdk 23
         targetSdk 34
         versionCode 23
