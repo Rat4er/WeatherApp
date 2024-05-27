@@ -1,12 +1,11 @@
 <resources>
     <string name="app_name">Погодка</string>
-    <string name="mic_desc" translatable="false">mic for search</string>
     <string name="day">День</string>
     <string name="pressure">ДАВЛЕНИЕ</string>
     <string name="wind">ВЕТЕР</string>
     <string name="humidity">ВЛАЖНОСТЬ</string>
     <string name="enter_city_name">ПОИСК ГОРОДА</string>
-    <string name="updated_at">Обновлено в</string>
+    <string name="updated_at">ОБНОВЛЕНО В</string>
     <string name="monday">Понедельник</string>
     <string name="tuesday">Вторник</string>
     <string name="wednesday">Среда</string>
@@ -14,4 +13,19 @@
     <string name="friday">Пятница</string>
     <string name="saturday">Суббота</string>
     <string name="sunday">Воскресенье</string>
+    <string name="thunderstorm">Гроза</string>
+    <string name="drizzle">Морось</string>
+    <string name="rain">Дождь</string>
+    <string name="snow">Снег</string>
+    <string name="clear">Ясно</string>
+    <string name="clouds">Облачно</string>
+    <string name="mist">Туман</string>
+    <string name="smoke">Смог</string>
+    <string name="haze">Туман</string>
+    <string name="dust">Пыль</string>
+    <string name="fog">Туман</string>
+    <string name="sand">Песок</string>
+    <string name="ash">Пепел</string>
+    <string name="squall">Шквал</string>
+    <string name="tornado">Торнадо</string>
 </resources>

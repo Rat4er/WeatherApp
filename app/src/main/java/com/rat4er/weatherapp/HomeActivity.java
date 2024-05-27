@@ -7,6 +7,7 @@ import static com.rat4er.weatherapp.network.InternetConnectivity.isInternetConne
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
@@ -76,7 +77,7 @@ public class HomeActivity extends AppCompatActivity {
         setNavigationBarColor();
 
         //check for new app update
-        checkUpdate();
+        //checkUpdate();
 
         // set refresh color schemes
         setRefreshLayoutColor();
@@ -85,6 +86,7 @@ public class HomeActivity extends AppCompatActivity {
         listeners();
 
         // getting data using internet connection
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSION_CODE);
         getDataUsingNetwork();
 
     }
@@ -183,7 +185,8 @@ public class HomeActivity extends AppCompatActivity {
         //check permission
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSION_CODE);
+
+            setLatitudeLongitudeUsingCity("MOSCOW");
         } else {
             client.getLastLocation().addOnSuccessListener(location -> {
                 setLongitudeLatitude(location);
@@ -218,7 +221,7 @@ public class HomeActivity extends AppCompatActivity {
             try {
                 this.name = name;
                 update_time = response.getJSONObject("current").getLong("dt");
-                updated_at = new SimpleDateFormat("EEEE hh:mm a", Locale.ENGLISH).format(new Date(update_time * 1000));
+                updated_at = new SimpleDateFormat("EEEE HH:mm:ss a", Locale.ENGLISH).format(new Date(update_time * 1000));
 
                 condition = response.getJSONArray("daily").getJSONObject(0).getJSONArray("weather").getJSONObject(0).getInt("id");
                 sunrise = response.getJSONArray("daily").getJSONObject(0).getLong("sunrise");
@@ -254,6 +257,7 @@ public class HomeActivity extends AppCompatActivity {
                         "drawable",
                         getPackageName()
                 ));
+        description = (descriptionTranslate(description));
         binding.layout.conditionDescTv.setText(description);
         binding.layout.tempTv.setText(temperature + "°C");
         binding.layout.minTempTv.setText(min_temperature + "°C");
@@ -267,6 +271,10 @@ public class HomeActivity extends AppCompatActivity {
         String[] dayToTranslateSplit = dayToTranslate.split(" ");
         dayToTranslateSplit[0] = UpdateUI.TranslateDay(dayToTranslateSplit[0].trim(), getApplicationContext());
         return dayToTranslateSplit[0].concat(" " + dayToTranslateSplit[1]);
+    }
+
+    private String descriptionTranslate(String description) {
+        return UpdateUI.TranslateDescription(description, getApplicationContext());
     }
 
     private void hideProgressBar() {
@@ -302,8 +310,8 @@ public class HomeActivity extends AppCompatActivity {
                 Toaster.successToast(this, "Permission Granted");
                 getDataUsingNetwork();
             } else {
-                Toaster.errorToast(this, "Permission Denied");
-                finish();
+                Toaster.errorToast(this, "Location data permission denied, application may be unstable");
+                //getDataUsingNetwork();
             }
         }
     }

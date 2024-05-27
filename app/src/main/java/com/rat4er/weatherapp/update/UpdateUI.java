@@ -53,4 +53,40 @@ public class UpdateUI {
         }
         return dayToBeTranslated;
     }
+
+    public static String TranslateDescription(String descriptionToBeTranslated, Context context) {
+        switch (descriptionToBeTranslated.trim()) {
+            case "Mist":
+                return context.getResources().getString(R.string.mist);
+            case "Thuderstorm":
+                return context.getResources().getString(R.string.thunderstorm);
+            case "Drizzle":
+                return  context.getResources().getString(R.string.drizzle);
+            case "Rain":
+                return context.getResources().getString(R.string.rain);
+            case "Snow":
+                return context.getResources().getString(R.string.snow);
+            case "Smoke":
+                return context.getResources().getString(R.string.smoke);
+            case "Haze":
+                return context.getResources().getString(R.string.haze);
+            case "Dust":
+                return context.getResources().getString(R.string.dust);
+            case "Fog":
+                return context.getResources().getString(R.string.fog);
+            case "Sand":
+                return context.getResources().getString(R.string.sand);
+            case "Ash":
+                return context.getResources().getString(R.string.ash);
+            case "Squall":
+                return context.getResources().getString(R.string.squall);
+            case "Tornado":
+                return context.getResources().getString(R.string.tornado);
+            case "Clear":
+                return context.getResources().getString(R.string.clear);
+            case "Clouds":
+                return context.getResources().getString(R.string.clouds);
+        }
+        return descriptionToBeTranslated;
+    }
 }

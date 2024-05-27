@@ -14,4 +14,19 @@
     <string name="friday">Vendredi</string>
     <string name="saturday">Samedi</string>
     <string name="sunday">Dimanche</string>
+    <string name="thunderstorm">Tempête</string>
+    <string name="drizzle">Bruine</string>
+    <string name="rain">Pluie</string>
+    <string name="snow">Neige</string>
+    <string name="clear">Temps clair</string>
+    <string name="clouds">Des nuages</string>
+    <string name="mist">Mist</string>
+    <string name="smoke">Smoke</string>
+    <string name="haze">Haze</string>
+    <string name="dust">Dust</string>
+    <string name="fog">Fog</string>
+    <string name="sand">Sand</string>
+    <string name="ash">Ash</string>
+    <string name="squall">Squall</string>
+    <string name="tornado">Tornado</string>
 </resources>

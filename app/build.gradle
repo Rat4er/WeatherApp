@@ -3,14 +3,14 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.rat4er.weatherapp"
+        applicationId "com.rat4er.weatherapp.trans"
         minSdk 23
-        targetSdk 33
-        versionCode 8
-        versionName "2.8.0"
+        targetSdk 34
+        versionCode 23
+        versionName "2.23.0"
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -28,6 +28,9 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    androidResources {
+        noCompress += ""
     }
     namespace 'com.rat4er.weatherapp'
     buildToolsVersion '33.0.1'

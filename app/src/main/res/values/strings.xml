@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Weathers</string>
+    <string name="app_name">Weather</string>
     <string name="mic_desc" translatable="false">mic for search</string>
     <string name="day">day</string>
     <string name="pressure">PRESSURE</string>
@@ -14,4 +14,19 @@
     <string name="friday">Friday</string>
     <string name="saturday">Saturday</string>
     <string name="sunday">Sunday</string>
+    <string name="thunderstorm">Thunderstorm</string>
+    <string name="drizzle">Drizzle</string>
+    <string name="rain">Rain</string>
+    <string name="snow">Snow</string>
+    <string name="clear">Clear</string>
+    <string name="clouds">Clouds</string>
+    <string name="mist">Mist</string>
+    <string name="smoke">Smoke</string>
+    <string name="haze">Haze</string>
+    <string name="dust">Dust</string>
+    <string name="fog">Fog</string>
+    <string name="sand">Sand</string>
+    <string name="ash">Ash</string>
+    <string name="squall">Squall</string>
+    <string name="tornado">Tornado</string>
 </resources>
